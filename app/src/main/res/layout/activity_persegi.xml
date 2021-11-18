@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation">
+
+
+    <TextView
+        android:id="@+id/PersegiV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="PERSEGI"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:shadowColor="#700"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="8"
+        tools:ignore="HardcodedText" />
+
+    <TableLayout
+        android:id="@+id/PersegiTb1"
+        android:layout_below="@+id/PersegiV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+        <TableRow
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:text="Sisi (s) : " />
+            <EditText
+                android:id="@+id/sisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:ems="20"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:inputType="number"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@id/PersegiTb1"
+        android:text="HITUNG"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bidang"
+        android:textColor="#FFC0CB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="keliling3"
+        android:textSize="24sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/PersegiV2"
+        android:layout_below="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:text="HASIL"/>
+
+    <TableLayout
+        android:id="@+id/PersegiTb2"
+        android:layout_below="@+id/PersegiV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TableRow
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:id="@+id/keliling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelliling"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/hasilkeliling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:background="@drawable/hasil"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingStart="5dp"/>
+        </TableRow>
+        <TableRow
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp">
+            <TextView
+                android:id="@+id/luas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luas"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/hasilluas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:background="@drawable/hasil"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingStart="5dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_below="@id/PersegiTb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="25sp"
+        android:text="KEMBALI"
+        android:onClick="kembali"/>
+
+</RelativeLayout>
